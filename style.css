@@ -30,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 body * {
@@ -38,7 +39,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: a 24px;
 }
@@ -149,4 +151,13 @@ footer span {
 }
 footer a {
   color: rgba(148, 0, 211);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url("./assets/bg.png");
+  }
+  .light {
+    --bg-url: url("./assets/bg-light.png");
+  }
 }
